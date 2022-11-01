@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-29 02:08:40 &#214;&#214;"/>
+        <attribute name="created" value="UEM7REVTS1RPUC1BTUZUUVUwOzIwMjItMTAtMjk7MDE6NDk6MDggw5bDljsyNzk1"/>
+        <attribute name="edited" value="UEM7REVTS1RPUC1BTUZUUVUwOzIwMjItMTAtMjk7MDI6MDg6NDAgw5bDljsxOzI4OTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="toplam, x" type="Integer" array="False" size=""/>
+            <assign variable="toplam" expression="0"/>
+            <assign variable="x" expression="0"/>
+            <for variable="x" start="1" end="999" direction="inc" step="1">
+                <if expression="x%5=0">
+                    <then>
+                        <assign variable="toplam" expression="toplam + x"/>
+                    </then>
+                    <else>
+                        <if expression="x%3=0">
+                            <then>
+                                <assign variable="toplam" expression="toplam + x"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot;5 ve 3'&#252;n 1000'e kadar katlar&#305;n&#305;n toplam&#305;: &quot; &amp;toplam &amp;&quot;dir&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

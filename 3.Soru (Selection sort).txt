@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include<time.h>                  
+              
+int main()
+{
+    srand(time(NULL));                   
+   int dizi[100000], s, x, p, swap;
+   int num = 1000;
+
+
+   for ( s = 1 ; s < num ; s++ )
+      dizi[s]=rand()%10000 + 1;                
+
+   for ( s = 1 ; s < ( num - 1 ) ; s++ )
+   {
+      p = s;
+
+      for ( x = s + 1 ; x < num ; x++ )
+      {
+         if ( dizi[p] > dizi[x] )
+            p = x;
+      }
+      if ( p != s )
+      {
+         swap = dizi[s];
+         dizi[s] = dizi[p];
+         dizi[p] = swap;
+      }
+   }
+
+
+   for ( s = 1 ; s < num ; s++ )
+      printf("%d\n\f", dizi[s]);
+
+   return 0;
+}

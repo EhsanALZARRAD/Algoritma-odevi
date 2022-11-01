@@ -1,0 +1,4 @@
+Ehsan ALZARRAD
+211451020
+
+Bence  (Baloncuk sıralaması, Bubble Sort) algoritması en basit ve en istikrarlı sıralama algoritmasıdır.

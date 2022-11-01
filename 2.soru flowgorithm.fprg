@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-01 10:31:55 &#214;S"/>
+        <attribute name="created" value="UEM7REVTS1RPUC1BTUZUUVUwOzIwMjItMTEtMDE7MTA6MjY6MzIgw5ZTOzI2NDc="/>
+        <attribute name="edited" value="UEM7REVTS1RPUC1BTUZUUVUwOzIwMjItMTEtMDE7MTA6MzE6NTUgw5ZTOzE7Mjc1Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="toplam, toplam2, y, x, r, e" type="Integer" array="False" size=""/>
+            <comment text="r : her bir say&#305;n&#305;n karesidir"/>
+            <assign variable="toplam2" expression="0"/>
+            <assign variable="toplam" expression="0"/>
+            <for variable="e" start="0" end="100" direction="inc" step="1">
+                <assign variable="r" expression="e*e"/>
+                <assign variable="toplam" expression="toplam + r"/>
+            </for>
+            <for variable="x" start="0" end="100" direction="inc" step="1">
+                <assign variable="toplam2" expression="toplam2 + x"/>
+            </for>
+            <assign variable="y" expression="toplam2 * toplam2"/>
+            <comment text="y : say&#305;lar&#305;n toplam&#305;n&#305;n karesinin sonucu"/>
+            <output expression="y - toplam" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

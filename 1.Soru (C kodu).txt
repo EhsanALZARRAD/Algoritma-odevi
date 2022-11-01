@@ -1,0 +1,22 @@
+#include <stdio.h>
+int goal(int p, int y) // goal bir fonksiyondur
+
+{
+
+    int x, toplam = 0;
+    for(x=1; x<=999; x++) {
+        if(((x % p) == 0 || (x % y) ==0 )) {
+            toplam = toplam + x;
+        }
+
+    }
+    return toplam;
+}
+int main ()
+{
+    int toplam;
+    toplam = goal(5,3); // goal fonksiyonun kullanarak herhangi 2 adet tam sayının 1000 'e kadar katlarını toplanabilir;
+    printf("3 ve 5'in 1000' kadar katlarının toplamı: %d", toplam); // 1000 sayıysı sonuca dahil değildir;
+
+    return 0;
+}

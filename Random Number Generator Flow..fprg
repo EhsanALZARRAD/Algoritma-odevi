@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-31 10:21:50 &#214;S"/>
+        <attribute name="created" value="UEM7REVTS1RPUC1BTUZUUVUwOzIwMjItMTAtMzE7MDg6NDU6MjAgw5ZTOzI2NTQ="/>
+        <attribute name="edited" value="UEM7REVTS1RPUC1BTUZUUVUwOzIwMjItMTAtMzE7MTA6MjE6NTAgw5ZTOzY7Mjc1Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <call expression="yuzbinrastgele"/>
+        </body>
+    </function>
+    <function name="yuzbinrastgele" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="say&#305;" type="Integer" array="True" size="100000"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="size(say&#305;)-1" direction="inc" step="1">
+                <assign variable="say&#305;[i]" expression="random(10000)+ 1"/>
+            </for>
+            <breakpoint expression="" always="True"/>
+        </body>
+    </function>
+</flowgorithm>

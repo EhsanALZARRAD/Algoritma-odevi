@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    int toplam,toplam2,r,e,x,y;
+    toplam = toplam2 =0;
+    for(e=0; e <= 100; e++) {
+        r = e*e;
+        toplam = toplam + r; // r: her bir sayının karesidir.
+    }
+    for(x=0; x <= 100; x++) {
+        toplam2 = toplam2 + x;
+       y = toplam2 * toplam2; // y: sayıların toplamının karesidir.
+    }
+
+    printf("%d", y-toplam);
+
+    return 0;
+}

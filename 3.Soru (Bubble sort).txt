@@ -1,0 +1,54 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define S 10000
+
+int dizi[S - 1];
+
+void Sort(int i[])
+{
+    int z, y;
+
+    for(z = 1; z < S; z++)
+    {
+        for( y = 0; y < S - 1; y++)
+        {
+            if(dizi[y] > dizi[y+1])
+                swapf(y, y+1);
+        }
+    }
+}
+
+void outs()
+{
+    int z;
+    for( z = 0; z < S - 1; z++)
+    {
+        printf("%d\f\n", dizi[z]);
+    }
+}
+
+void swapf(int i, int y)
+{
+    int temp;
+    temp = dizi[i];
+    dizi[i] = dizi[y];
+    dizi[y] = temp;
+
+}
+
+void rastg()
+{
+    int z;
+    for( z = 0; z < S - 1; z++)
+    {
+        dizi[z] = rand()%10000;
+    }
+}
+
+int main()
+{
+    rastg();
+    Sort(dizi);
+    outs();
+    return 0;
+}
